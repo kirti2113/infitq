@@ -1,0 +1,19 @@
+#lex_auth_0127135739583692801137
+
+def add_string(str1):
+  #start writing your code here
+  a=str1[-3:]
+  if(len(str1)<3):
+    str1=str1
+  elif(a=="ing"):
+       str1=str1+"ly"
+  else:
+      str1=str1+"ing"
+  
+    
+
+  
+  return str1
+
+str1="com"
+print(add_string(str1))
