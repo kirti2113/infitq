@@ -1,0 +1,16 @@
+#lex_auth_01269446319507046499
+
+def remove_duplicates(value):
+    #start writing your code here
+    output=[]
+    
+    for x in value:
+          if x in output:
+             pass
+          else:
+              output.append(x)
+    output="".join(output)
+    return output    
+       
+
+print(remove_duplicates("11223445566666ababzzz@@@123#*#*"))
