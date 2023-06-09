@@ -1,0 +1,21 @@
+#lex_auth_0127135838317445121147
+
+def count_digits_letters(sentence):
+    #start writing your code here
+    c= sentence.split()
+    result_list = [0,0]
+    for i in c:
+        for x in i:
+            if ord(x) in range(65,91) or ord(x) in range(97,123):
+                result_list[0]+=1
+            elif ord(x) in range(48,58):
+                result_list[1]+=1
+   
+    
+    
+
+    
+    return result_list
+
+sentence="Infosys Mysore 570027"
+print(count_digits_letters(sentence))
