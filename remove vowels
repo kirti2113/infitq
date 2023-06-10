@@ -1,0 +1,23 @@
+#lex_auth_01269444961482342489
+
+def sms_encoding(data):
+    #start writing your code here
+   
+    string=""
+    vowels=["a","e","i","o","u","A","E","I","O","U"]
+    words=data.split()
+    for x in words:
+       if len(x) ==1:
+         string=string+x
+       else:
+           for y in x:
+               if y in vowels:
+                  x.replace(y,"")
+               else:
+                    string=string+y
+       string=string+" "
+    string=string.rstrip()   
+    return string                
+
+data="I love Python"
+print(sms_encoding(data))
