@@ -1,0 +1,26 @@
+class Rider:
+    def __init__(self,trained_status,experience):
+        self.__trained_status=trained_status
+        self.__experience=experience
+        
+    def rides_vehicle(self):
+        print("Rider")
+        
+    
+        
+class BikeRider(Rider):
+    def __init__(self,race_license,trained_status,experience):
+        super().__init__(trained_status,experience)
+        self.__race_license=race_license
+    
+    def rides_in_dome(self):
+        print("Dome")
+        
+    
+class CycleRider(Rider):
+      
+    def rides_blindfolded(self):
+        print("Blind")
+     
+     
+     
