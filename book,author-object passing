@@ -1,0 +1,29 @@
+class Author:
+    def __init__(self,name,country,age):
+         self.__name=name
+         self.__country=country
+         self.__age=age
+    def get_name(self):
+        return self.__name
+        
+    def get_country(self): 
+        return self.__country
+        
+    def get_age(self):  
+        return self.__age
+        
+class Book:
+  def __init__(self,name,author,code,year,price):
+    self.__name=name
+    self.__author=author
+    self.__code=code
+    self.__year=year
+    self.__price=price
+
+  def display(self):
+        return self.__author.get_name()
+       
+    
+a=Author("xyz","India",25)
+b=Book("B",a,899,2022,299)
+print(b.display())
